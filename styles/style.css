@@ -1,0 +1,352 @@
+/*
+
+style.css
+Colours
+=======
+
+Black:      fff
+...:        fff
+....:       fff
+
+*/
+
+
+
+
+/*---------------------
+General Styles
+-----------------------*/
+
+html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+}
+
+
+/*---------------------
+Typography
+-----------------------*/
+h1, h2, h3 {
+    font-weight: 400;
+    margin: 0;
+    line-height: 35px;
+}
+
+h4, h5, h6 {
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+}
+
+h1{
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+
+    
+
+/*---------------------
+Layout
+-----------------------*/
+.container {
+    width: 940px;
+    padding: 0px 10px;
+    margin:0 auto;
+
+}
+    
+header {
+    background-color: black;
+}
+
+#logo {
+    display: block;
+    padding-top: 12px;
+    float:left;
+}
+
+#hero {
+    background-color: #00c0ff;
+}
+
+/*---------------------
+Layout
+-----------------------*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+}
+
+header nav ul li a{
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+header nav ul li a:hover {
+    background-color: #222;
+}
+
+#hero-title{
+    width: 500px;
+    padding: 60px 0;
+    float:left;
+    
+}
+
+#call-to-action{
+    margin: 40px 0;
+}
+
+#hero-image{
+    float: right;
+    margin: 20px 0 -20px 0;
+}
+
+#lead-in{
+    margin-bottom: 40px;
+}
+
+#content {
+    padding: 50px 0;
+}
+
+#column-content{
+    width: 720px;
+    float:left;
+}
+
+
+
+
+
+
+
+/*---------------------
+Sidebar
+-----------------------*/
+
+aside{
+    width: 220px;
+    float:right;
+    background-color: #444;
+    padding: 20px;
+    margin-top: 15px;  
+    color: white;
+    
+    font-size: 12px;
+    line-height: 18px;
+}
+
+aside .widget:nth-child(2){
+    margin-top: 40px;
+}
+
+aside .widget h4{
+    font-size: 16px;
+    font-weight: 200;
+    
+}
+
+aside .socials a{
+    position: relative;
+}
+
+
+aside .socials a:hover{
+    top: -1px;
+}
+
+/*---------------------
+Secondary Call-to-action
+-----------------------*/
+
+#secondary-cta {
+    background-color: #eee;
+    padding:20px 0;
+}
+
+#secondary-cta h4{
+    font-weight: 200;
+    font-size: 24px;
+    float:left;
+    padding: 4px 0;
+
+}
+
+#secondary-cta form{
+    margin: 0;
+    float:right;
+}
+
+/*---------------------
+Footer
+-----------------------*/
+
+footer{
+    background: darkgrey;
+    color: white;
+    padding: 30px 0;
+    
+}
+
+footer #copyright{
+    width: 300px;
+    float: left;
+}
+
+footer nav{
+    width: 300px;
+    float:right; 
+    margin: auto 0;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer nav a{
+    margin: 0 10px 0 0;
+}
+
+footer p{
+    margin: auto 0;
+}
+
+footer a:hover {
+    color:cadetblue;
+
+}
+
+
+/*---------------------
+Button Styles
+-----------------------*/
+.btn{ 
+    width: auto;
+    background-color: darkblue;
+    border: 1px solid #1e728c; 
+    color: white; 
+    cursor: pointer;
+    display:inline-block;
+    
+    maring: 0;
+    outline: none;
+    padding: 20px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    /*for button shadow*/
+    box-shadow:  0 1px 0 rgba(255,255,255,0.5) inset;
+    /*fancy transition for button*/
+    
+            -webkit-transition: background-color 0.15s ease-in-out;
+            transition: background-color 0.15s ease-in-out;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: #0006b2;
+} 
+
+.btn:active{
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2) inset;
+ 
+    color: #fff;
+}
+
+.btn-large{
+    padding: 20px 30px;
+    font-size: 24px;
+    font-weight: 200;
+    
+} 
+.btn-small{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.btn-secondary,
+.btn-secondary:hover, 
+.btn-secondary:active{
+    margin: 0 10px 20px;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-secondary:hover{
+    text-decoration: underline;
+}
+    
+.btn-secondary:active{
+    top:1px;
+}
+
+/*---------------------
+Global Styles
+-----------------------*/
+
+input{
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+input[type="email"], input[type="text"]{
+    position: relative;
+    border: solid 1px #ccc;
+    width: 220px; 
+    height: 39px;
+    margin-right: -5px;
+    top: -1px;
+    
+}
+
+.clearfix:before, 
+.clearfix:after { 
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+    float:left;
+    margin-right: 20px;
+}
+
+.four{
+    width: 220px;
+}
+
+/*added myself*/
+.autozoom{
+    max-width:100%;
+    max-height:100%;
+}
