@@ -1,116 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>project page</title>
-        <link href="styles/style.css" rel="stylesheet" type="text/css" media="screen">
-        <link href="styles/normalize.css" rel="stylesheet" type="text/css" media="screen">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
+    <link rel='stylesheet' href='./css/animate.css' />
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/blocs.js"></script>
+    
+    <title>Project Mirror</title>
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- Navigation Bloc -->
+<div class="bloc l-bloc bgc-white" id="nav-bloc">
+	<div class="container bloc-sm">
+		<nav class="navbar row">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">Project Mirror</a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-1">
+				<ul class="site-navigation nav navbar-nav">
+					<li>
+						<a id="pl-undefined" onclick="scrollToTarget('#about')">About</a>
+					</li>
+					<li>
+						<a id="pl-undefined" onclick="scrollToTarget('#signup')">Sign up</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+<!-- Navigation Bloc END -->
 
-    </head>
-    <body>
-        <header>
-            <div class="container clearfix" id="first-container">
-                <a href="index.html" title="Return to Home" id="logo">
-                    <img src="images/logo.png" alt="Logo">
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-            </div><!--end container-->
-                
-            <div id="hero">
-                <div class="container clearfix">
-                    <div id="hero-title">
-                        <h1>Welcome to Project Mirror</h1>
-                        <h2>Project Mirror is a case that turns your smartphone into a dual display camera</h2>
-                        <div id="call-to-action">
-                            <a href="" class="btn btn-large">Learn More</a>
-                            <a href="" class="btn btn-secondary">Secondary action</a>             
-                        </div><!--end call-to-action-->
-                    </div><!--end hero-title-->
+<!-- bloc-1 -->
+<div class="bloc bgc-white b-parallax bg-pic1 d-bloc" id="bloc-1">
+	<div class="container bloc-xxl">
+		<div class="row">
+			<div class="col-sm-12 col-md-8 col-md-offset-2" id="first-block">
+				<h2 class="mg-lg" id="hero-tag">
+					A case that turns your smart phone into a dual display camera…
+				</h2>
+				<h4 class="mg-md" id="hero-exp">
+					<i>"While most tools today are created for the photographer, we believe there should be a tool that is designed for the person standing on the other side of the camera."</i>
+				</h4>
+                <a class="btn  btn-lg btn-d" id="first-btn" onclick="scrollToTarget('#signup')">Sign up</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-1 END -->
 
-                    <img src="images/hero%20image.jpg" alt="Large product picture" id="hero-image">
-                </div><!--end containter-->
-            </div><!--end of hero-->
-        </header>
+<!-- Bloc Group -->
+<div class='bloc-group'>
 
-        <div id="content" class="container clearfix" >
-            <section id="column-content">
-                <div id="lead-in">
-                    <h3>PSD to HTML5 &amp; CSS3</h3>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </div><!-- end lead-in -->
+<!-- about-->
+<div class="bloc l-bloc bgc-white bloc-tile-2" id="about">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-12">
+				<img src="img/feature1.jpg" width="100%" />
+				<h3 class="mg-md">
+					Always see what photographer sees
+				</h3>
+				<p>
+					People being photograhped can always see what photographer sees in real time, allowing everyone to participate in the photo-taking process.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- about END -->
 
-                <div class="column four">
-                    <img src="images/c1.jpg" alt="exp1" class="autozoom">
-                    <h4>A Cute Puppy!</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                </div><!-- end column -->
+<!-- bloc-2 -->
+<div class="bloc l-bloc bgc-white bloc-tile-2" id="bloc-2">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-12">
+				<img src="img/feature3.jpg" width="100%" />
+				<h3 class="mg-md">
+					Take better selfie
+				</h3>
+				<p>
+					Use the better camera on your smartphone to take selfie.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-2 END -->
+</div>
+<!-- Bloc Group END -->
 
-                <div class="column four">
-                    <img src="images/c2.jpg" alt="exp2" class="autozoom">
-                    <h4>A Crazy Dog!</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                </div><!-- end column -->
+<!-- Footer - signup -->
+<div class="bloc l-bloc bgc-white" id="signup">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3 class="mg-md ">
+					Interested in getting prototype?
+				</h3>
+				<p class=" mg-md">
+					We are currently inviting people to join our development process because we are interested in how people are intereacting with the product. And by give out prototypes, we can constantly improving the experinece.
+				</p><a href="https://chinweiliao.typeform.com/to/tci44t" class="btn  btn-lg btn-d" target="_blank" id="signupbutton">Sign me up using Typeform</a>
+			</div>
+			<div class="col-sm-8">
+				<img src="img/open%20for%20test.jpg" class="img-responsive" width="100%" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer - signup END -->
 
-                <div class="column four last">
-                    <img src="images/c3.jpg" alt="exp3" class="autozoom">
-                    <h4>A Husky Dog!</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                </div><!-- end column -->
+<!-- Footer - bloc-5 -->
+<div class="bloc bgc-white bg-center" id="bloc-5">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="text-center">
+					Fotowith Limited - Copyright © 2015.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer - bloc-5 END -->
+</div>
+<!-- Main container END -->
 
-            </section><!-- end column-content -->
-            
-            
-            <aside>
+</body>
+    
+<!-- Google Analytics -->
 
-                <div class="widget">
-                    <h4>Latest News</h4>
-                    <h5>Dec 31, 2012</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </div><!-- end widget -->
+<!-- Google Analytics END -->
 
-                <div class="widget socials">
-                    <h4>Follow us</h4>
-                    <a href="http://twitter.com/bradhussey" target="_blank"><img src="images/social_twitter.gif" alt="Follow us on Twitter"></a>
-                    <a href="http://facebook.com/brightsidestudios" target="_blank"><img src="images/social_facebook.gif" alt="Follow us on Facebook"></a>
-                    <a href="http://youtube.com/hussey17" target="_blank"><img src="images/social_youtube.gif" alt="Follow us on YouTube"></a>
-                </div><!-- end widget -->
-
-            </aside>
-        </div><!--end of content-->
-
-        
-        <div id="secondary-cta">
-            <div class="container clearfix">
-                <h4>Keep up to date with the latest news from our company</h4>
-
-                <form>
-                    <input type="email" placeholder="Enter your email here">
-                    <input type="submit" class="btn btn-small" value="Sign up">
-                </form>
-            </div><!-- end container -->
-        </div><!-- end secondary-cta -->
-        
-        <footer>
-            <div class="container clearfix">
-                <p id="copyright">Copyright &copy; 2012 Company Name</p>
-
-                <nav>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-            </div><!-- end container -->
-        </footer>
-        
-        
-    </body>
 </html>
