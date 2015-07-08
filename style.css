@@ -29,7 +29,7 @@ button{outline: none!important;} /* Prevent ugly blue glow on chrome and safari 
 
 
 a{
-	color:lor:#FFFF4E!important;
+	color:#939392!important;
 }
  a:hover{
 	color:#000000!important;
@@ -61,9 +61,6 @@ a{
 	clear:both;
 	background: 50% 50% no-repeat;
 	padding:0 50px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 }
 .bloc .container{
@@ -113,9 +110,6 @@ a{
 /* Background Styles */
 
 .bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
-	-webkit-background-size: auto!important;
-	-moz-background-size: auto!important;
-	-o-background-size: auto!important;
 	background-size: auto!important;
 }
 .bg-center{
@@ -284,6 +278,7 @@ a{
 		position:absolute;
 		top:50%;
 		right:20px;
+		-ms-transform:translate(0, -50%);
 		transform:translate(0, -50%);
 		-webkit-transform:translateY(-50%);
 	}
@@ -336,6 +331,8 @@ nav .caret{
 /* = Buttons
 -------------------------------------------------------------- */
 #signupbutton{
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
 
@@ -450,10 +447,7 @@ iframe{
     }
     .bloc{
         padding-left: 0; 
-        padding-right: 0;  
-        -webkit-background-size: auto 200%;
-        -moz-background-size: auto 200%;
-        -o-background-size: auto 200%;
+        padding-right: 0;
         background-size: auto 200%;
     }
     .bloc, .bloc .text-right{
@@ -504,7 +498,6 @@ iframe{
     .navbar-collapse{
         padding:0;
         overflow-x: hidden;
-        -webkit-box-shadow: none;
         box-shadow: none;
     }
     .navbar-brand img{
