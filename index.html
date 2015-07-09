@@ -32,13 +32,23 @@
     ga('send', 'pageview');
 </script>
     
+<!----for scroll depth----------->    
+<script src="/js/jquery.scrolldepth.min.js"></script>
+<script>
+jQuery(function() {
+  jQuery.scrollDepth();
+});
+</script>
+
+<!----end script scroll depth---->
+    
 </head>
 <body>
 <!-- Main container -->
 <div class="page-container">
     
 <!-- Navigation Bloc -->
-<div class="bloc l-bloc bgc-white" id="nav-bloc" onmouseover="ga('send', 'event', 'nav-bloc', 'mouseover', 'mouse over nav bloc')">
+<div class="bloc l-bloc bgc-white" id="nav-bloc">
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
@@ -53,7 +63,7 @@
 						<a id="pl-undefined" onclick="scrollToTarget('#about'); ga('send', 'event', 'nav-button', 'click', 'about button');">About</a>
 					</li>
 					<li>
-						<a id="pl-undefined" onclick="scrollToTarget('#signup'); ga('send', 'event', 'nav-button', 'click', 'signup button');">Sign up</a>
+						<a id="pl-undefined" onclick="scrollToTarget('#signup'); ga('send', 'event', 'nav-button', 'click', '1signup button');">Sign up</a>
 					</li>
 				</ul>
 			</div>
@@ -63,7 +73,7 @@
 <!-- Navigation Bloc END -->
 
 <!-- bloc-1 -->
-<div class="bloc bgc-white b-parallax bg-pic1 d-bloc" id="bloc-1" onmouseover="ga('send', 'event', 'hero-bloc', 'mouseover', 'mouse over hero bloc')">
+<div class="bloc bgc-white b-parallax bg-pic1 d-bloc" id="bloc-1" >
 	<div class="container bloc-xxl">
 		<div class="row">
 			<div class="col-sm-12 col-md-8 col-md-offset-2" id="first-block">
@@ -71,12 +81,10 @@
                     Turning your smartphone into a dual display camera
 				</h2>
 				<h4 class="mg-md" id="hero-exp">
-                    A new photo-taking experience that everyone can participate.
+                    While most photography tools today are created for the photographer, we believe there should be a tool that is designed for the person standing on the other side of the camera...
 				</h4>
-                <p>
-                While most photography tools today are created for the photographer, we believe there should be a tool that is designed for the person standing on the other side of the camera... 
-                </p>
-                <a class="btn  btn-lg btn-d" id="first-btn" onclick="scrollToTarget('#signup'); ga('send', 'event', 'hero-button', 'click', 'signup button');">Get Prototype</a>
+
+                <a class="btn  btn-lg btn-d" id="first-btn" onclick="scrollToTarget('#signup'); ga('send', 'event', 'hero-button', 'click', '2signup button');">Get Prototype</a>
 			</div>
 		</div>
 	</div>
@@ -85,7 +93,7 @@
     
 <!-- Bloc Group -->
     
-<div class='bloc-group' onmouseover="ga('send', 'event', 'feature-bloc', 'mouseover', 'mouse over feature bloc')">
+<div class='bloc-group'>
 
 <!-- about-->    
 <div class="bloc l-bloc bgc-white bloc-tile-2" id="about" >
@@ -94,9 +102,9 @@
 			<div class="col-sm-12">
 				<img src="img/feature1.jpg" width="100%" />
 				<h3 class="mg-md">
-					Subject can see what photographer sees
+					Instant Feedback for Everyone
 				</h3>
-				<p>While with friends, it is not easy to take a picture that everyone is happy. With Project Mirror, you can take better picture without being blamed by your friends. They can now adjust their facial expressions or even making funny faces befofre the picture is taken.
+				<p>Ever complained by others that you take bad pictures of them? With Project Mirror, you can take better picture becasue people can now adjust their facial expression or even make funny faces before the picture is taken.
 				</p>
 			</div>
 		</div>
@@ -111,10 +119,10 @@
 			<div class="col-sm-12">
 				<img src="img/feature3.jpg" width="100%" />
 				<h3 class="mg-md">
-					Use the rear camera to take better picture
+					Use the better camera
 				</h3>
 				<p>
-				For most smartphone users, the front camera can sometimes suffer from poor lighting condition. With Project Mirror, you can take better picutre without losing the ability to see before the picture is taken.
+                Sometimes it can be frustrating to use the front camera. With Project Mirror, you can always take better quality picture.
 				</p>
 			</div>
 		</div>
@@ -126,19 +134,19 @@
 <hr>
     
 <!-- Footer - signup -->
-<div class="bloc l-bloc bgc-white" id="signup" onmouseover="ga('send', 'event', 'signup-bloc', 'mouseover', 'mouse over signup bloc')">
+<div class="bloc l-bloc bgc-white" id="signup">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-4">
 				<h2 class="mg-md ">
-					OPEN to public testing 
+					OPEN for public testing 
 				</h2>
                 <h4>
                 Interested in getting the prototype?
                 </h4>
 				<p class=" mg-md">
 					We are currently inviting people to join our development process because we are interested in how people are intereacting with Project Mirror. 
-				</p><a href="https://chinweiliao.typeform.com/to/tci44t" class="btn  btn-lg btn-d" target="_blank" id="signupbutton" onclick="ga('send', 'event', 'final-button', 'click', 'signup button');">Sign up here</a>
+				</p><a href="https://chinweiliao.typeform.com/to/tci44t" class="btn  btn-lg btn-d" target="_blank" id="signupbutton" onclick="ga('send', 'event', 'final-button', 'click', '3signup button');">Sign up here</a>
 			</div>
 			<div class="col-sm-8">
 				<img src="img/open%20for%20test.jpg" class="img-responsive" width="100%" />
