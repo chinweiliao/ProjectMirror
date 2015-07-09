@@ -14,13 +14,31 @@
     <script src="./js/blocs.js"></script>
     
     <title>Project Mirror</title>
+    
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-41919434-5', 'auto');
+    ga('send', 'pageview');
+</script>
+    
 </head>
 <body>
 <!-- Main container -->
 <div class="page-container">
     
 <!-- Navigation Bloc -->
-<div class="bloc l-bloc bgc-white" id="nav-bloc">
+<div class="bloc l-bloc bgc-white" id="nav-bloc" onmouseover="ga('send', 'event', 'nav-bloc', 'mouseover', 'mouse over nav bloc')">
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
@@ -32,10 +50,10 @@
 			<div class="collapse navbar-collapse navbar-1">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a id="pl-undefined" onclick="scrollToTarget('#about')">About</a>
+						<a id="pl-undefined" onclick="scrollToTarget('#about'); ga('send', 'event', 'nav-button', 'click', 'about button');">About</a>
 					</li>
 					<li>
-						<a id="pl-undefined" onclick="scrollToTarget('#signup')">Sign up</a>
+						<a id="pl-undefined" onclick="scrollToTarget('#signup'); ga('send', 'event', 'nav-button', 'click', 'signup button');">Sign up</a>
 					</li>
 				</ul>
 			</div>
@@ -45,17 +63,17 @@
 <!-- Navigation Bloc END -->
 
 <!-- bloc-1 -->
-<div class="bloc bgc-white b-parallax bg-pic1 d-bloc" id="bloc-1">
+<div class="bloc bgc-white b-parallax bg-pic1 d-bloc" id="bloc-1" onmouseover="ga('send', 'event', 'hero-bloc', 'mouseover', 'mouse over hero bloc')">
 	<div class="container bloc-xxl">
 		<div class="row">
 			<div class="col-sm-12 col-md-8 col-md-offset-2" id="first-block">
 				<h2 class="mg-lg" id="hero-tag">
-					A case that turns your smart phone into a dual display camera…
+					A case that turns your smartphone into a dual display camera…
 				</h2>
 				<h4 class="mg-md" id="hero-exp">
-					<i>"While most tools today are created for the photographer, we believe there should be a tool that is designed for the person standing on the other side of the camera."</i>
+					Project Mirror allows people in font of the camera to always see what photographer sees before the picture is taken, so everyone can participate in the photo-taking process to build fun and lasting memories. 
 				</h4>
-                <a class="btn  btn-lg btn-d" id="first-btn" onclick="scrollToTarget('#signup')">Sign up</a>
+                <a class="btn  btn-lg btn-d" id="first-btn" onclick="scrollToTarget('#signup'); ga('send', 'event', 'hero-button', 'click', 'signup button');">Sign up</a>
 			</div>
 		</div>
 	</div>
@@ -63,19 +81,18 @@
 <!-- bloc-1 END -->
 
 <!-- Bloc Group -->
-<div class='bloc-group'>
+<div class='bloc-group' onmouseover="ga('send', 'event', 'feature-bloc', 'mouseover', 'mouse over feature bloc')">
 
 <!-- about-->
-<div class="bloc l-bloc bgc-white bloc-tile-2" id="about">
+<div class="bloc l-bloc bgc-white bloc-tile-2" id="about" >
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
 				<img src="img/feature1.jpg" width="100%" />
 				<h3 class="mg-md">
-					Always see what photographer sees
+					Everyone can see what photographer sees
 				</h3>
-				<p>
-					People being photograhped can always see what photographer sees in real time, allowing everyone to participate in the photo-taking process.
+				<p>While with friends, it is not easy to take a picture that everyone is 100% satisfied. With Project Mirror, you can take better picture without being blamed by others since they can now collaborate with you by moving their position, adjusting their facial expressions or even making funny faces based on the real time feedback.
 				</p>
 			</div>
 		</div>
@@ -90,10 +107,10 @@
 			<div class="col-sm-12">
 				<img src="img/feature3.jpg" width="100%" />
 				<h3 class="mg-md">
-					Take better selfie
+					Take a better selfie
 				</h3>
 				<p>
-					Use the better camera on your smartphone to take selfie.
+					For most smartphone users, using the front camera to take selfie is more convenient, but the quailty can be bad while you are in poor lighting places. Use Project Mirror to take better selfie with the better camera.
 				</p>
 			</div>
 		</div>
@@ -104,7 +121,7 @@
 <!-- Bloc Group END -->
 
 <!-- Footer - signup -->
-<div class="bloc l-bloc bgc-white" id="signup">
+<div class="bloc l-bloc bgc-white" id="signup" onmouseover="ga('send', 'event', 'signup-bloc', 'mouseover', 'mouse over signup bloc')">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-4">
@@ -113,7 +130,7 @@
 				</h3>
 				<p class=" mg-md">
 					We are currently inviting people to join our development process because we are interested in how people are intereacting with the product. And by give out prototypes, we can constantly improving the experinece.
-				</p><a href="https://chinweiliao.typeform.com/to/tci44t" class="btn  btn-lg btn-d" target="_blank" id="signupbutton">Sign me up using Typeform</a>
+				</p><a href="https://chinweiliao.typeform.com/to/tci44t" class="btn  btn-lg btn-d" target="_blank" id="signupbutton" onclick="ga('send', 'event', 'final-button', 'click', 'signup button');">Sign me up using Typeform</a>
 			</div>
 			<div class="col-sm-8">
 				<img src="img/open%20for%20test.jpg" class="img-responsive" width="100%" />
@@ -143,18 +160,8 @@
     
 <!-- Google Analytics -->
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-41919434-5', 'auto');
-  ga('send', 'pageview');
-
-</script>    
     
-    
+
     
 <!-- Google Analytics END -->
 
