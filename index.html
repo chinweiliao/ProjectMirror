@@ -14,24 +14,21 @@
     <script src="./js/blocs.js"></script>
     
     <title>Project Mirror</title>
-    
+   
+<!-- Google Analytics -->
 <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-41919434-5', 'auto');
-    ga('send', 'pageview');
-</script>
-    
+  ga('create', 'UA-41919434-5', 'auto');
+  ga('send', 'pageview');
+
+</script>    
+<!-- Google Analytics END -->
+
+
 <!----for scroll depth----------->    
 <script src="/js/jquery.scrolldepth.min.js"></script>
 <script>
@@ -74,9 +71,9 @@ jQuery(function() {
 
 <!-- bloc-1 -->
 <div class="bloc bgc-white b-parallax bg-pic1 d-bloc" id="bloc-1" >
-	<div class="container bloc-xxl">
+	<div class="container bloc-lg">
 		<div class="row">
-			<div class="col-sm-12 col-md-8 col-md-offset-2" id="first-block">
+			<div class="col-sm-12" id="first-block">
 				<h2 class="mg-lg" id="hero-tag">
                     Turning your smartphone into a dual display camera
 				</h2>
@@ -93,13 +90,12 @@ jQuery(function() {
     
 <!-- Bloc Group -->
     
-<div class='bloc-group'>
 
 <!-- about-->    
-<div class="bloc l-bloc bgc-white bloc-tile-2" id="about" >
+<div class="bloc l-bloc bgc-white" id="about" >
 	<div class="container bloc-lg">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-md-6">
 				<img src="img/feature1.jpg" width="100%" />
 				<h3 class="mg-md">
 					Instant Feedback for Everyone
@@ -107,16 +103,8 @@ jQuery(function() {
 				<p>Ever complained by others that you take bad pictures of them? With Project Mirror, you can take better picture becasue people can now adjust their facial expression or even make funny faces before the picture is taken.
 				</p>
 			</div>
-		</div>
-	</div>
-</div>
-<!-- about END -->
 
-<!-- bloc-2 -->
-<div class="bloc l-bloc bgc-white bloc-tile-2" id="bloc-2">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-md-6">
 				<img src="img/feature3.jpg" width="100%" />
 				<h3 class="mg-md">
 					Use the better camera
@@ -129,8 +117,7 @@ jQuery(function() {
 	</div>
 </div>
 <!-- bloc-2 END -->
-</div>
-<!-- Bloc Group END -->
+
 <hr>
     
 <!-- Footer - signup -->
@@ -146,7 +133,8 @@ jQuery(function() {
                 </h4>
 				<p class=" mg-md">
 					We are currently inviting people to join our development process because we are interested in how people are intereacting with Project Mirror. 
-				</p><a href="https://chinweiliao.typeform.com/to/tci44t" class="btn  btn-lg btn-d" target="_blank" id="signupbutton" onclick="ga('send', 'event', 'final-button', 'click', '3signup button');">Sign up here</a>
+				</p>
+                <a href="https://chinweiliao.typeform.com/to/tci44t" class="btn  btn-lg btn-d" target="_blank" id="signupbutton" onclick="ga('send', 'event', 'final-button', 'click', '3signup button');">Sign up here</a>
 			</div>
 			<div class="col-sm-8">
 				<img src="img/open%20for%20test.jpg" class="img-responsive" width="100%" />
@@ -176,11 +164,5 @@ jQuery(function() {
 
 </body>
     
-<!-- Google Analytics -->
-
-    
-
-    
-<!-- Google Analytics END -->
 
 </html>
